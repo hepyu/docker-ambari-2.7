@@ -1,4 +1,4 @@
-docker run -d --privileged --name amb-server -it hortonworks/ambari-server-local:2.7.3
+docker run -d --privileged --name amb-server -p 8088:8080 -it hortonworks/ambari-server-local:2.7.3
 docker run -d --privileged --name amb1 -it hortonworks/ambari-base-local:2.7.3
 docker run -d --privileged --name amb2 -it hortonworks/ambari-base-local:2.7.3
 

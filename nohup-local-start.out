@@ -1,0 +1,93 @@
+7e8902bae9a2e25efaf85a280ba6cc08460e4577fc1932bc30a6ae7869ef2daf
+673bdc7ecffbe6f7c1945b64077d2160bc6e886ab9f868d7caec27017fdec787
+7153911bede2e90b1cedf874d762df8c5cb4758f0406bd5814c29428d16fc0df
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh -o 'StrictHostKeyChecking no' 'localhost'"
+and check to make sure that only the key(s) you wanted were added.
+
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+                (if you think this is a mistake, you may want to use -f option)
+
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh -o 'StrictHostKeyChecking no' 'amb1'"
+and check to make sure that only the key(s) you wanted were added.
+
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh -o 'StrictHostKeyChecking no' 'amb2'"
+and check to make sure that only the key(s) you wanted were added.
+
+Redirecting to /bin/systemctl restart httpd.service
+Note: Forwarding request to 'systemctl enable httpd.service'.
+Created symlink from /etc/systemd/system/multi-user.target.wants/httpd.service to /usr/lib/systemd/system/httpd.service.
+Using python  /usr/bin/python
+Setup ambari-server
+Checking SELinux...
+WARNING: Could not run /usr/sbin/sestatus: OK
+Customize user account for ambari-server daemon [y/n] (n)? 
+Adjusting ambari-server permissions and ownership...
+Checking firewall status...
+Checking JDK...
+WARNING: JAVA_HOME /usr/jdk64/jdk1.8.0_112 must be valid on ALL hosts
+WARNING: JCE Policy files are required for configuring Kerberos security. If you plan to use Kerberos,please make sure JCE Unlimited Strength Jurisdiction Policy Files are valid on all hosts.
+Check JDK version for Ambari Server...
+JDK version found: 8
+Minimum JDK version is 8 for Ambari. Skipping to setup different JDK for Ambari Server.
+Checking GPL software agreement...
+GPL License for LZO: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+Enable Ambari Server to download and install GPL Licensed LZO packages [y/n] (n)? 
+Completing setup...
+Configuring database...
+Enter advanced database configuration [y/n] (n)? 
+Configuring database...
+Default properties detected. Using built-in database.
+Configuring ambari database...
+Checking PostgreSQL...
+Running initdb: This may take up to a minute.
+Initializing database ... OK
+
+
+About to start PostgreSQL
+Configuring local database...
+Configuring PostgreSQL...
+Restarting PostgreSQL
+Creating schema and user...
+done.
+Creating tables...
+done.
+Extracting system views...
+....ambari-admin-2.7.3.0.139.jar
+
+Ambari repo file contains latest json url http://public-repo-1.hortonworks.com/HDP/hdp_urlinfo.json, updating stacks repoinfos with it...
+Adjusting ambari-server permissions and ownership...
+Ambari Server 'setup' completed successfully.
+Using python  /usr/bin/python
+Starting ambari-server
+Ambari Server running with administrator privileges.
+Organizing resource files at /var/lib/ambari-server/resources...
+Ambari database consistency check started...
+Server PID at: /var/run/ambari-server/ambari-server.pid
+Server out at: /var/log/ambari-server/ambari-server.out
+Server log at: /var/log/ambari-server/ambari-server.log
+Waiting for server start...............................
+Server started listening on 8080
+
+DB configs consistency check: no errors and warnings were found.
+Ambari Server 'start' completed successfully.
